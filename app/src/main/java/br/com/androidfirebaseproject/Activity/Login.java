@@ -72,6 +72,15 @@ public class Login extends AppCompatActivity {
             }
         });
 
+        btn_registrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (Login.this,Register.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         ckb_mostrar_senha.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
